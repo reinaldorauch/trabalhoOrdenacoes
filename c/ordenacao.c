@@ -1,8 +1,8 @@
 /**
  * @Author: reinaldo
  * @Date:   2014-09-03 19:28:12
- * @Last Modified by:   reinaldo
- * @Last Modified time: 2014-09-07 20:56:32
+ * @Last Modified by:   Reinaldo Antonio Camargo Rauch
+ * @Last Modified time: 2014-09-07 21:46:08
  */
 
 #include <stdio.h>
@@ -243,7 +243,7 @@ int main() {
 
     bubbleSort();
 
-    printf("Ordenação com bubble sort: %13li\n", ((clock() - start) / CLOCKS_PER_SEC));
+    printf("bubble sort: %13lis\n", ((clock() - start) / CLOCKS_PER_SEC));
     printf("O vetor está ordenado? %s\n", isSorted() ? "Sim" : "Não");
 
     /**
@@ -255,7 +255,7 @@ int main() {
 
     insertionSort();
 
-    printf("Ordenação com insertion sort: %10li\n", ((clock() - start) / CLOCKS_PER_SEC));
+    printf("insertion sort: %10lis\n", ((clock() - start) / CLOCKS_PER_SEC));
     printf("O vetor está ordenado? %s\n", isSorted() ? "Sim" : "Não");
 
 
@@ -268,7 +268,7 @@ int main() {
 
     selectionSort();
 
-    printf("Ordenação com selection sort: %10li\n", ((clock() - start) / CLOCKS_PER_SEC));
+    printf("selection sort: %10lis\n", ((clock() - start) / CLOCKS_PER_SEC));
     printf("O vetor está ordenado? %s\n", isSorted() ? "Sim" : "Não");
 
 
@@ -281,7 +281,7 @@ int main() {
 
     heapSort();
 
-    printf("Ordenação com heap sort: %15li\n", ((clock() - start) / CLOCKS_PER_SEC));
+    printf("heap sort: %15lis\n", ((clock() - start) / CLOCKS_PER_SEC));
     printf("O vetor está ordenado? %s\n", isSorted() ? "Sim" : "Não");
 
 
@@ -294,7 +294,7 @@ int main() {
 
     mergeSort(0, TAM - 1);
 
-    printf("Ordenação com merge sort: %14li\n", ((clock() - start) / CLOCKS_PER_SEC));
+    printf("merge sort: %14lis\n", ((clock() - start) / CLOCKS_PER_SEC));
     printf("O vetor está ordenado? %s\n", isSorted() ? "Sim" : "Não");
 
 
@@ -307,7 +307,7 @@ int main() {
 
     quickSort(0, TAM - 1);
 
-    printf("Ordenação com quick sort: %14li\n", ((clock() - start) / CLOCKS_PER_SEC));
+    printf("quick sort: %14lis\n", ((clock() - start) / CLOCKS_PER_SEC));
     printf("O vetor está ordenado? %s\n", isSorted() ? "Sim" : "Não");
 
 
